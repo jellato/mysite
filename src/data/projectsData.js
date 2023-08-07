@@ -79,8 +79,8 @@ export const projectsData = [
         projectName: 'E-commerce Project',
         projectDesc: "This project is about a shop that delivers fresh, imperfect produce directly to customers' doors in an effort to reduce food waste and make healthy eating more accessible.",
         tags: ['React', 'E-commerce', 'Stripe'],
-        code: 'https://www.imperfectfoods.com/',
-        demo: '',
+        code: '',
+        demo: 'https://www.imperfectfoods.com/',
         image: shopify3
     },
     {

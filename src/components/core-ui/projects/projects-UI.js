@@ -16,7 +16,37 @@ function ProjectsUI({ theme, classes }) {
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
-                            {projectsData.slice(0, 3).map(project => (
+                            {projectsData.slice(0, 4).map(project => (
+                                <SingleProject
+                                    theme={theme}
+                                    key={project.id}
+                                    id={project.id}
+                                    name={project.projectName}
+                                    desc={project.projectDesc}
+                                    tags={project.tags}
+                                    code={project.code}
+                                    demo={project.demo}
+                                    image={project.image}
+                                />
+                            ))}
+                        </div>
+                        <div className="projects--bodyContainer">
+                            {projectsData.slice(5, 10).map(project => (
+                                <SingleProject
+                                    theme={theme}
+                                    key={project.id}
+                                    id={project.id}
+                                    name={project.projectName}
+                                    desc={project.projectDesc}
+                                    tags={project.tags}
+                                    code={project.code}
+                                    demo={project.demo}
+                                    image={project.image}
+                                />
+                            ))}
+                        </div>
+                        <div className="projects--bodyContainer">
+                            {projectsData.slice(11, 14).map(project => (
                                 <SingleProject
                                     theme={theme}
                                     key={project.id}
@@ -31,7 +61,7 @@ function ProjectsUI({ theme, classes }) {
                             ))}
                         </div>
 
-                        {projectsData.length > 3 && (
+                        {projectsData.length > 4 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
                                     <button className={classes.viewAllBtn}>
